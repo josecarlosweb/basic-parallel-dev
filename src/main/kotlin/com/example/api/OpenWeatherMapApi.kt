@@ -13,7 +13,7 @@ class OpenWeatherMapApi {
 
     private val log = LoggerFactory.getLogger(OpenWeatherMapApi::class.java)
     private val apiClient = WebClient.create("http://api.openweathermap.org/data/2.5")
-    private val apiKey = "38ac289b552552e575cdec17019b95f4"
+    private val apiKey = "{}"
 
     fun getWeatherInfoFromCity(city: String): Mono<WeatherResponseDto> {
         return apiClient.get()
